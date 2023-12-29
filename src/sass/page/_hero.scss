@@ -1,0 +1,35 @@
+.hero {
+  display: flex;
+
+  &__container-left,
+  &__container-right {
+    width: 50vw;
+    height: 72rem;
+  }
+
+  &__container-left {
+    background-image: url(../img/blur-bg-hero.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &__background {
+    filter: saturate(1.5) contrast(0.8) brightness(1.16);
+    background-image: linear-gradient(
+        17deg,
+        #0c1537 -6.09%,
+        rgba(12, 21, 55, 0) 32.63%
+      ),
+      $vector-blue, $vector-red, $vector-orange, $vector-green-s,
+      $vector-green-xxs, $vector-green-xs, url(../img/cubic-house.png);
+
+    background-position: 0, 81% 67%, 13.2% 22.2%, 79.5% 32.8%, 36% 53.5%,
+      42.5% 53.5%, 47.5% 53.5%, 28% 10%;
+    background-size: auto, 7%, 10%, 6%, 6%, 2.2%, 4.5%, 120%;
+
+    border-bottom-left-radius: 8rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+  }
+}
