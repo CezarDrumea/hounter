@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;700&family=Yellowtail&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/sass/main.scss" />
@@ -19,7 +19,10 @@
   <body>
     <header class="header">
       <svg class="header__logo">
-        <use href="src/img/sprite.svg#logo" />
+        <use
+          href="src/img/sprite.svg#logo"
+          xlink:href="src/img/sprite.svg#logo"
+        />
       </svg>
 
       <nav class="header__nav">
@@ -53,12 +56,13 @@
     <main>
       <div class="hero">
         <div class="hero__container-left">
-          <svg class="hero__shape-light-green">
-            <use
-              href="src/img/sprite.svg#shape-light-green"
-              xlink:href="src/img/sprite.svg#shape-light-green"
-            />
-          </svg>
+          <h1 class="hero__title heading-1">
+            find the place to live <span>your dreams</span> easily here
+          </h1>
+          <p class="hero__description text-body">
+            Everything you need about finding your place to live will be here,
+            where it will be easier for you
+          </p>
         </div>
         <div class="hero__container-right">
           <div class="hero__background"></div>

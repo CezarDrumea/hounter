@@ -11,6 +11,8 @@
     background-image: url(../img/blur-bg-hero.png);
     background-repeat: no-repeat;
     background-size: 100%;
+
+    padding: 18.2rem 10rem 10rem 12.4rem;
   }
 
   &__background {
@@ -31,5 +33,18 @@
     background-repeat: no-repeat;
     width: 100%;
     height: inherit;
+  }
+
+  &__title {
+    margin-right: 2rem;
+
+    span {
+      color: $color-primary;
+    }
+  }
+
+  &__description {
+    color: $color-grey-3;
+    margin-top: 2.4rem;
   }
 }
