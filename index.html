@@ -26,17 +26,14 @@
       </svg>
 
       <nav class="header__nav">
-        <a href="#" class="header__link button__link--empty-white"
+        <a href="#" class="header__link button--link-empty-white"
           ><span class="button__text-fixed">About us</span></a
         >
-        <a href="#" class="header__link button__link--empty-white"
+        <a href="#" class="header__link button--link-empty-white"
           ><span class="button__text-fixed">Article</span></a
         >
 
-        <div
-          tabindex="1"
-          class="header__select button__select--small-empty-white"
-        >
+        <div tabindex="1" class="header__select button--select-empty-white">
           <span class="button__text-fixed">Property</span>
           <svg class="button__arrow--white">
             <use href="src/img/sprite.svg#arrow-down" />
@@ -63,6 +60,25 @@
             Everything you need about finding your place to live will be here,
             where it will be easier for you
           </p>
+
+          <div class="hero__search input--complex">
+            <svg>
+              <use
+                href="src/img/sprite.svg#map-pin"
+                xlink:href="src/img/sprite.svg#map-pin"
+              />
+            </svg>
+            <input
+              type="text"
+              placeholder="Search for the location you want!"
+            />
+            <button class="button--icon-fill-green">
+              <span class="button__text-fixed">Search</span>
+              <svg class="button__arrow--white">
+                <use href="src/img/sprite.svg#arrow-right" />
+              </svg>
+            </button>
+          </div>
         </div>
         <div class="hero__container-right">
           <div class="hero__background"></div>

@@ -1,6 +1,6 @@
 export const toggleSelect = (selectElement) => {
   selectElement.addEventListener('click', (e) => {
-    selectElement.classList.toggle('button__select--active');
+    selectElement.classList.toggle('button--select-active');
 
     const optionElement = e.target.closest('ul li');
     if (!optionElement) return;
@@ -10,6 +10,6 @@ export const toggleSelect = (selectElement) => {
   });
 
   selectElement.addEventListener('blur', () => {
-    selectElement.classList.remove('button__select--active');
+    selectElement.classList.remove('button--select-active');
   });
 };

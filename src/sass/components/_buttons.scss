@@ -6,11 +6,15 @@
   font-weight: 600;
   text-transform: capitalize;
 
+  // COLOR MODIFIER
+
   &--fill-green {
     @extend .button;
     background-color: $color-primary;
     color: $color-white;
     border: none;
+    padding: 1.2rem 2.4rem;
+    line-height: 2.4rem;
 
     &:hover {
       background-color: $color-primary-dark;
@@ -39,21 +43,31 @@
     padding: 0.9rem 1.7rem;
   }
 
-  &__link {
+  // VARIATION MODIFIER
+
+  &--icon {
+    @extend .button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+
+    svg {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  &--link {
     @extend .button;
 
     &:link,
     &:visited {
       text-decoration: none;
     }
-
-    &--empty-white {
-      @extend .button__link;
-      @extend .button--empty-white;
-    }
   }
 
-  &__select {
+  &--select {
     @extend .button;
 
     position: relative;
@@ -74,46 +88,59 @@
         width: 100%;
       }
     }
+  }
 
-    &--active {
-      ul {
-        display: flex;
-      }
+  // COLOR & VARIATION MODIFIER
 
-      svg {
-        rotate: 180deg;
-      }
-    }
+  &--select-empty-white {
+    @extend .button--select;
+    @extend .button--empty-white;
 
-    &--small-empty-white {
-      @extend .button__select;
-      @extend .button--empty-white;
+    gap: 0.8rem;
 
+    ul {
       gap: 0.8rem;
+      border: 0.1rem solid $color-white;
+      border-top: none;
+      border-radius: 0 0 1.6rem 1.6rem;
+      padding: 3rem 0.8rem 1.2rem;
 
-      ul {
-        gap: 0.8rem;
-        border: 0.1rem solid $color-white;
-        border-top: none;
-        border-radius: 0 0 1.6rem 1.6rem;
-        padding: 3rem 0.8rem 1.2rem;
+      li {
+        padding: 0.4rem 0.8rem;
+        transition: 0.2s;
 
-        li {
-          padding: 0.4rem 0.8rem;
-          transition: 0.2s;
-
-          &:hover {
-            background-color: $color-primary;
-          }
+        &:hover {
+          background-color: $color-primary;
         }
       }
     }
+  }
 
-    &--large {
-      @extend .button__select;
-      gap: 1.6rem;
+  &--link-empty-white {
+    @extend .button--link;
+    @extend .button--empty-white;
+  }
+
+  &--icon-fill-green {
+    @extend .button--fill-green;
+    @extend .button--icon;
+  }
+
+  // ACTIVE MODIFIER
+
+  &--select-active {
+    @extend .button;
+
+    ul {
+      display: flex;
+    }
+
+    svg {
+      rotate: 180deg;
     }
   }
+
+  // ELEMENTS
 
   &__text-fixed {
     width: 7rem;
