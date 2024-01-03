@@ -1,4 +1,4 @@
-import { toggleSelect } from './select';
+import { toggleSelect } from './components/select';
 
 const selectHero = document.querySelector('.header__select');
 
