@@ -90,6 +90,29 @@
     }
   }
 
+  &--arrow {
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: transparent;
+    color: $color-primary-dark;
+    border: none;
+    box-shadow: inset 0 0 0 0.1rem $color-primary-dark;
+    padding: 1.3rem;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+      box-shadow: none;
+    }
+
+    svg {
+      display: block;
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+  }
+
   // COLOR & VARIATION MODIFIER
 
   &--select-empty-white {
@@ -97,6 +120,11 @@
     @extend .button--empty-white;
 
     gap: 0.8rem;
+
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
 
     ul {
       gap: 0.8rem;
@@ -126,6 +154,16 @@
     @extend .button--icon;
   }
 
+  &--icon-empty-green {
+    @extend .button--icon;
+    @extend .button--empty-green;
+
+    &:hover {
+      box-shadow: none;
+      color: $color-primary;
+    }
+  }
+
   // ACTIVE MODIFIER
 
   &--select-active {
@@ -147,13 +185,5 @@
     display: block;
     display: flex;
     justify-content: center;
-  }
-
-  &__arrow {
-    &--white {
-      width: 1.6rem;
-      height: 1.6rem;
-      fill: $color-white;
-    }
   }
 }

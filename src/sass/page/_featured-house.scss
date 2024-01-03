@@ -1,0 +1,18 @@
+.featured-house {
+  padding: 12rem 12.4rem 0;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 2.7rem;
+  }
+
+  &__arrows {
+    display: flex;
+    gap: 1.6rem;
+  }
+}
