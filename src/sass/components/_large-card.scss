@@ -1,2 +1,10 @@
 .large-card {
+  &__img {
+    width: 37.6rem;
+    height: 38.2rem;
+    border-radius: 2.4rem;
+    margin-bottom: 2.4rem;
+    background-size: cover;
+    background-position: center;
+  }
 }

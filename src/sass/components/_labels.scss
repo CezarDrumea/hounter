@@ -1,0 +1,32 @@
+.label {
+  display: flex;
+  padding: 0.8rem 1.6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 3.2rem;
+
+  svg {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  &--red {
+    @extend .label;
+    color: $color-danger;
+    background-color: $color-danger-light;
+  }
+
+  &--blue {
+    @extend .label;
+
+    color: $color-info;
+    background-color: $color-info-light;
+  }
+
+  &--green {
+    @extend .label;
+    color: $color-primary;
+    background-color: $color-primary-light;
+  }
+}
