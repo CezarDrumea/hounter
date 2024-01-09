@@ -1,5 +1,8 @@
 .large-card {
+  cursor: pointer;
+
   &__img {
+    @extend .large-card;
     width: 37.6rem;
     height: 38.2rem;
     border-radius: 2.4rem;

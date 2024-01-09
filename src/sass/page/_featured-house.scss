@@ -52,6 +52,39 @@
     bottom: 1.6rem;
   }
 
+  &__person {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  &__person-icon {
+    background-size: contain;
+    background-position: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+
+    &--1 {
+      @extend .featured-house__person-icon;
+      background-image: url(../img/person-5.jpg);
+    }
+
+    &--2 {
+      @extend .featured-house__person-icon;
+      background-image: url(../img/person-6.jpg);
+    }
+
+    &--3 {
+      @extend .featured-house__person-icon;
+      background-image: url(../img/person-7.jpg);
+    }
+
+    &--4 {
+      @extend .featured-house__person-icon;
+      background-image: url(../img/person-3.jpeg);
+    }
+  }
+
   &__title {
     margin-bottom: 0.8rem;
   }
