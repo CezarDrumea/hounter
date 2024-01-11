@@ -1,22 +1,23 @@
 .testimonials {
-  padding: 12.2rem 12.4rem 1.1rem;
+  padding: 12.2rem 0 0;
 
   &__section-name {
-    text-align: center;
     margin-bottom: 1.3rem;
   }
 
   &__title {
+    width: 58rem;
     text-align: center;
-    margin-bottom: 4rem;
+    margin: 0 auto 4rem;
   }
 
   &__carousel {
     position: relative;
     height: 50.5rem;
     display: flex;
+    justify-content: center;
     gap: 3.2rem;
-    margin-bottom: 3.2rem;
+    overflow: hidden;
   }
 
   &__card-bg-img {

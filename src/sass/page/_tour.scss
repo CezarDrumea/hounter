@@ -5,6 +5,10 @@
   align-items: center;
   padding: 12rem 12.4rem 0 12.4rem;
 
+  &__section-name {
+    margin-bottom: 1.2rem;
+  }
+
   &__blur-bg {
     position: absolute;
     top: -19.8rem;

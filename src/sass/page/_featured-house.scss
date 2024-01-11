@@ -1,5 +1,9 @@
 .featured-house {
-  padding: 12rem 12.4rem 0;
+  padding: 12rem 0 0;
+
+  &__top {
+    padding: 0 12.4rem;
+  }
 
   &__menu {
     display: flex;
@@ -18,8 +22,10 @@
   }
 
   &__carousel {
+    padding: 0 12.4rem;
     display: flex;
     gap: 3.2rem;
+    overflow-x: hidden;
   }
 
   &__carousel-img {

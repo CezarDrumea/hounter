@@ -21,6 +21,7 @@
   }
 
   &--top {
+    text-align: center;
     @extend .line-text;
 
     &::before {

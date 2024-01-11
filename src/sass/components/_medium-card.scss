@@ -1,0 +1,52 @@
+.medium-card {
+  width: 58rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+
+  &__bg-img {
+    flex-shrink: 0;
+    width: 20rem;
+    height: 14.8rem;
+    border-radius: 1.6rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__person {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+
+  &__person-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__person-name {
+    color: $color-neutral;
+  }
+
+  &__title {
+    margin-bottom: 1.6rem;
+  }
+
+  &__time-data {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    color: $color-grey-2;
+  }
+
+  &__time-data-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
