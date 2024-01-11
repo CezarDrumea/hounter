@@ -51,7 +51,7 @@
     </header>
 
     <main>
-      <div class="hero">
+      <section class="hero">
         <div class="hero__container-left">
           <h1 class="hero__title heading-1">
             find the place to live <span>your dreams</span> easily here
@@ -130,12 +130,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="featured-house">
-        <p class="line-text text-label">Our Recommendation</p>
+      <section class="featured-house">
+        <p class="line-text--left text-label">Our Recommendation</p>
         <div class="featured-house__menu">
           <h2 class="featured-house__title heading-2">Featured House</h2>
+
           <div class="featured-house__buttons">
             <button class="button--icon-empty-green">
               <svg>
@@ -201,7 +202,7 @@
             </div>
           </div>
 
-          <div class="large-card">
+          <!-- <div class="large-card">
             <div class="large-card__img featured-house__carousel-img--2">
               <div class="label--blue featured-house__label">
                 <svg>
@@ -278,9 +279,229 @@
                 </p>
               </div>
             </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="tour">
+        <div class="tour__blur-bg"></div>
+        <div class="tour__content">
+          <p class="line-text--left text-label">Ready to Sell!</p>
+          <h2 class="heading-2 tour__title">Let’s tour and see our house!</h2>
+          <p class="tour__description text-body">
+            Houses recommended by our partners that have been curated to become
+            the home of your dreams!
+          </p>
+          <p class="tour__house-detail-text text-body-semibold">House Detail</p>
+          <div class="tour__house-detail">
+            <div class="tour__detail">
+              <div class="tour__detail-icon-container">
+                <svg class="tour__detail-icon--1">
+                  <use
+                    href="src/img/sprite.svg#bed"
+                    xlinkhref="src/img/sprite.svg#bed"
+                  />
+                </svg>
+              </div>
+              <span class="text-body-medium">4 Bedrooms</span>
+            </div>
+            <div class="tour__detail">
+              <div class="tour__detail-icon-container">
+                <svg class="tour__detail-icon--2">
+                  <use
+                    href="src/img/sprite.svg#bathtub"
+                    xlinkhref="src/img/sprite.svg#bed"
+                  />
+                </svg>
+              </div>
+              <span class="text-body-medium">2 Bathrooms</span>
+            </div>
+            <div class="tour__detail">
+              <div class="tour__detail-icon-container">
+                <svg class="tour__detail-icon--3">
+                  <use
+                    href="src/img/sprite.svg#car"
+                    xlinkhref="src/img/sprite.svg#bed"
+                  />
+                </svg>
+              </div>
+              <span class="text-body-medium">1 Carport</span>
+            </div>
+            <div class="tour__detail">
+              <div class="tour__detail-icon-container">
+                <svg class="tour__detail-icon--4">
+                  <use
+                    href="src/img/sprite.svg#stairs"
+                    xlinkhref="src/img/sprite.svg#bed"
+                  />
+                </svg>
+              </div>
+              <span class="text-body-medium">2 Floors</span>
+            </div>
+          </div>
+          <div class="tour__line"></div>
+          <div class="tour__contact">
+            <div class="tour__person">
+              <div class="tour__person-icon"></div>
+              <div class="tour__person-data">
+                <h2 class="tour__person-name subtitle">Dianne Russell</h2>
+                <label class="tour__person-location text-label"
+                  >Manchester, Kentucky</label
+                >
+              </div>
+            </div>
+
+            <button class="tour__contact-button button--icon-fill-green">
+              <svg class="button__arrow--white">
+                <use href="src/img/sprite.svg#phone" />
+              </svg>
+              <span>Contact Now</span>
+            </button>
           </div>
         </div>
-      </div>
+        <div class="tour__background">
+          <div class="tour__large-img">
+            <div class="tour__play"></div>
+          </div>
+          <div class="tour__medium-img"></div>
+          <div class="tour__small-imgs">
+            <div class="tour__small-img--1"></div>
+            <div class="tour__small-img--2"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <p class="testimonials__section-name line-text--top text-label">
+          See Our Review
+        </p>
+        <h2 class="testimonials__title heading-2">
+          What Our Users Say About Us
+        </h2>
+        <div class="testimonials__carousel">
+          <!-- <div class="testimonials__card testimonials__card--3 huge-card">
+            <div class="testimonials__card-bg-img--3 huge-card__bg-img"></div>
+            <div class="huge-card__content">
+              <h4 class="huge-card__title heading-4">
+                Through the Hounter, I can get a house for my self
+              </h4>
+              <p class="huge-card__text text-label">
+                By looking for information about what kind of house we want, we
+                managed to get the house we wanted very quickly, and directly
+                connected with the seller to be able to ask about the details,
+                very helpful!
+              </p>
+              <div class="huge-card__person-rating">
+                <div class="huge-card__person">
+                  <div
+                    class="testimonials__person-icon--3 huge-card__person-icon"
+                  ></div>
+                  <div class="-card__person-data">
+                    <p class="text-label-semibold">Ronald Richards</p>
+                    <p class="huge-card__person-specialty text-label-small">
+                      Head of Marketing
+                    </p>
+                  </div>
+                </div>
+                <div class="huge-card__rating">
+                  <svg class="testimonials__rating-icon huge-card__rating-icon">
+                    <use
+                      href="src/img/sprite.svg#star"
+                      xlink:href="src/img/sprite.svg#star"
+                    />
+                  </svg>
+                  <h4 class="heading-4">4.3</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonials__card testimonials__card--3 huge-card">
+            <div class="testimonials__card-bg-img--3 huge-card__bg-img"></div>
+            <div class="huge-card__content">
+              <h4 class="huge-card__title heading-4">
+                Through the Hounter, I can get a house for my self
+              </h4>
+              <p class="huge-card__text text-label">
+                By looking for information about what kind of house we want, we
+                managed to get the house we wanted very quickly, and directly
+                connected with the seller to be able to ask about the details,
+                very helpful!
+              </p>
+              <div class="huge-card__person-rating">
+                <div class="huge-card__person">
+                  <div
+                    class="testimonials__person-icon--3 huge-card__person-icon"
+                  ></div>
+                  <div class="-card__person-data">
+                    <p class="text-label-semibold">Ronald Richards</p>
+                    <p class="huge-card__person-specialty text-label-small">
+                      Head of Marketing
+                    </p>
+                  </div>
+                </div>
+                <div class="huge-card__rating">
+                  <svg class="testimonials__rating-icon huge-card__rating-icon">
+                    <use
+                      href="src/img/sprite.svg#star"
+                      xlink:href="src/img/sprite.svg#star"
+                    />
+                  </svg>
+                  <h4 class="heading-4">4.3</h4>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="testimonials__card testimonials__card--3 huge-card">
+            <div class="testimonials__card-bg-img--3 huge-card__bg-img"></div>
+            <div class="huge-card__content">
+              <h4 class="huge-card__title heading-4">
+                Through the Hounter, I can get a house for my self
+              </h4>
+              <p class="huge-card__text text-label">
+                By looking for information about what kind of house we want, we
+                managed to get the house we wanted very quickly, and directly
+                connected with the seller to be able to ask about the details,
+                very helpful!
+              </p>
+              <div class="huge-card__person-rating">
+                <div class="huge-card__person">
+                  <div
+                    class="testimonials__person-icon--3 huge-card__person-icon"
+                  ></div>
+                  <div class="-card__person-data">
+                    <p class="text-label-semibold">Ronald Richards</p>
+                    <p class="huge-card__person-specialty text-label-small">
+                      Head of Marketing
+                    </p>
+                  </div>
+                </div>
+                <div class="huge-card__rating">
+                  <svg class="testimonials__rating-icon huge-card__rating-icon">
+                    <use
+                      href="src/img/sprite.svg#star"
+                      xlink:href="src/img/sprite.svg#star"
+                    />
+                  </svg>
+                  <h4 class="heading-4">4.3</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials__navigation-dots">
+          <div
+            class="testimonials__navigation-dot testimonials__navigation-dot--1"
+          ></div>
+          <div
+            class="testimonials__navigation-dot testimonials__navigation-dot--2 testimonials__navigation-dot--active"
+          ></div>
+          <div
+            class="testimonials__navigation-dot testimonials__navigation-dot--3"
+          ></div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

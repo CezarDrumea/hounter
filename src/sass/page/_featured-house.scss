@@ -27,22 +27,22 @@
 
     &--1 {
       @extend .featured-house__carousel-img;
-      background-image: url(../img/house-2.jpg);
+      background-image: url(../img/featured-house-1.jpg);
     }
 
     &--2 {
       @extend .featured-house__carousel-img;
-      background-image: url(../img/house-3.jpg);
+      background-image: url(../img/featured-house-2.jpg);
     }
 
     &--3 {
       @extend .featured-house__carousel-img;
-      background-image: url(../img/house-4.jpg);
+      background-image: url(../img/featured-house-3.jpg);
     }
 
     &--4 {
       @extend .featured-house__carousel-img;
-      background-image: url(../img/house-5.jpg);
+      background-image: url(../img/featured-house-4.jpg);
     }
   }
 

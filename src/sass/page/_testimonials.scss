@@ -1,0 +1,76 @@
+.testimonials {
+  padding: 12.2rem 12.4rem 1.1rem;
+
+  &__section-name {
+    text-align: center;
+    margin-bottom: 1.3rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__carousel {
+    position: relative;
+    height: 50.5rem;
+    display: flex;
+    gap: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__card-bg-img {
+    &--1 {
+      background-image: url(../img/testimonials-house-1.jpeg);
+    }
+
+    &--2 {
+      background-image: url(../img/testimonials-house-2.jpeg);
+    }
+
+    &--3 {
+      background-image: url(../img/testimonials-house-3.jpeg);
+    }
+  }
+
+  &__person-icon {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--1 {
+      @extend .testimonials__person-icon;
+      background-image: url(../img/person-5.jpg);
+    }
+
+    &--2 {
+      @extend .testimonials__person-icon;
+      background-image: url(../img/person-3.jpeg);
+    }
+
+    &--3 {
+      @extend .testimonials__person-icon;
+      background-image: url(../img/person-7.jpg);
+    }
+  }
+
+  &__navigation-dots {
+    width: 5.6rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__navigation-dot {
+    cursor: pointer;
+    transition: 0.2s;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $color-grey-1;
+    border-radius: 50%;
+
+    &--active {
+      background-color: $color-grey-3;
+    }
+  }
+}

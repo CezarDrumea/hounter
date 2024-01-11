@@ -10,14 +10,13 @@
 html {
   box-sizing: border-box;
   font-size: calc(10 * 100vw / 1440);
-  color: $color-black;
+  color: $color-text;
   font-family: 'Lexend', sans-serif;
 }
 
 body {
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     display: none;

@@ -1,14 +1,33 @@
+%line-text-before {
+  position: absolute;
+  content: '';
+  height: 0.1rem;
+  width: 3.2rem;
+  background-color: $color-secondary;
+}
+
 .line-text {
   position: relative;
   color: $color-secondary;
 
-  &::before {
-    position: absolute;
-    content: '';
-    height: 0.1rem;
-    width: 3.2rem;
-    background-color: $color-secondary;
-    left: -4rem;
-    top: 0.8rem;
+  &--left {
+    @extend .line-text;
+
+    &::before {
+      @extend %line-text-before;
+      left: -4rem;
+      top: 0.8rem;
+    }
+  }
+
+  &--top {
+    @extend .line-text;
+
+    &::before {
+      @extend %line-text-before;
+      top: -0.8rem;
+      left: 50%;
+      translate: -50%;
+    }
   }
 }

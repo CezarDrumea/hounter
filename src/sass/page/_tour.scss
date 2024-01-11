@@ -1,0 +1,196 @@
+.tour {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12rem 12.4rem 0 12.4rem;
+
+  &__blur-bg {
+    position: absolute;
+    top: -19.8rem;
+    right: 0;
+    background-image: url(../img/blur-bg-tour.svg);
+    background-repeat: no-repeat;
+    width: 53.9rem;
+    height: 80.2rem;
+  }
+
+  &__title {
+    margin-bottom: 1.6rem;
+  }
+
+  &__description {
+    color: $color-grey-2;
+    margin-bottom: 2.4rem;
+    width: 41.3rem;
+  }
+
+  &__house-detail-text {
+    margin-bottom: 2.4rem;
+  }
+
+  &__house-detail {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.6rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__detail {
+    color: $color-grey-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__detail-icon-container {
+    display: grid;
+    place-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  &__detail-icon {
+    &--1 {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+
+    &--2 {
+      width: 2.5rem;
+      height: 2.4rem;
+    }
+
+    &--3 {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    &--4 {
+      width: 2.4rem;
+      height: 2.2rem;
+    }
+  }
+
+  &__line {
+    height: 0.2rem;
+    background-color: $color-grey-1;
+    margin-bottom: 3.2rem;
+  }
+
+  &__contact {
+    width: 47.8rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__person-icon {
+    border-radius: 50%;
+    width: 5.6rem;
+    height: 5.6rem;
+    background-image: url(../img/person-5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__person-data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  &__person-location {
+    color: $color-grey-2;
+  }
+
+  &__contact-button {
+    align-self: center;
+  }
+
+  &__background {
+    position: relative;
+    width: 52.8rem;
+    height: 45.9rem;
+  }
+
+  &__large-img {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 47.8rem;
+    height: 41.6rem;
+    background-image: linear-gradient(
+        0deg,
+        rgba($color-black, 0.2) 0%,
+        rgba($color-black, 0.2) 100%
+      ),
+      url(../img/house-tour.png);
+    background-size: 100%, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 4.8rem;
+    height: 4.8rem;
+    background-image: url(../img/play.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &__medium-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/couch-tour.jpeg);
+    width: 29.6rem;
+    height: 16.8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.8rem;
+  }
+
+  &__small-imgs {
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    width: 20rem;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__small-img {
+    width: 9.6rem;
+    height: inherit;
+    border-radius: 0.8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--1 {
+      @extend .tour__small-img;
+      background-image: url(../img/interior-1-tour.jpeg);
+    }
+
+    &--2 {
+      @extend .tour__small-img;
+      background-image: url(../img/interior-2-tour.jpeg);
+    }
+  }
+}

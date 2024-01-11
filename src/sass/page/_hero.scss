@@ -10,7 +10,7 @@
   // LEFT CONTAINER
 
   &__container-left {
-    background-image: url(../img/blur-bg-hero.png);
+    background-image: url(../img/blur-bg-hero.svg);
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -87,10 +87,10 @@
         rgba(12, 21, 55, 0) 32.63%
       ),
       $vector-blue, $vector-red, $vector-orange, $vector-green-s,
-      $vector-green-xxs, $vector-green-xs, url(../img/cubic-house.png);
+      $vector-green-xxs, $vector-green-xs, url(../img/house-bg-hero.png);
 
-    background-position: 0, 81% 66%, 13.2% 22.2%, 79.5% 32.5%, 36% 53%,
-      42.5% 53%, 47.5% 53%, 28% 10%;
+    background-position: 0, 81% 66%, 13.2% 22.2%, 79.5% 32.5%, 36% 53.3%,
+      42.5% 53.3%, 47.5% 53.3%, 28% 10%;
     background-size: auto, 7%, 10%, 6%, 6%, 2.2%, 4.5%, 120%;
 
     border-bottom-left-radius: 8rem;
@@ -167,7 +167,7 @@
 
   &__recommendation-2-img {
     border-radius: 2.4rem;
-    background-image: url(../img/house-1.png);
+    background-image: url(../img/house-icon-hero.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
