@@ -1,0 +1,42 @@
+.cookies {
+  background-color: $color-primary-light;
+  width: 46.5rem;
+  height: 5.6rem;
+  padding: 1.6rem 4rem;
+  border-radius: 2.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 2.4rem;
+  left: 50%;
+  translate: -50%;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    color: $color-primary-dark;
+  }
+
+  &__cookie-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  &__close-button {
+    cursor: pointer;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__close-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}

@@ -1,4 +1,4 @@
-export const toggleSelect = (selectElement) => {
+export default toggleSelect = (selectElement) => {
   selectElement.addEventListener('click', (e) => {
     selectElement.classList.toggle('select-active');
 

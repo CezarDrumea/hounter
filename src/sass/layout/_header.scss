@@ -5,7 +5,8 @@
   justify-content: space-between;
   width: $content-width;
   margin-top: 3.9rem;
-  margin: 3.9rem 12.4rem 0;
+  left: 50%;
+  translate: -50%;
 
   &__logo {
     width: 11.5rem;
