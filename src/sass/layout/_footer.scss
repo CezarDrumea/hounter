@@ -1,0 +1,53 @@
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 12rem 12.4rem 10.5rem;
+
+  &__blur-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 67rem;
+    height: 50rem;
+    background-image: url(../img/blur-bg-footer.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__content-left {
+    width: 37.6rem;
+  }
+
+  &__logo {
+    width: 11.5rem;
+    height: 3.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__content-left-text {
+    color: $color-neutral;
+    margin-bottom: 2.4rem;
+  }
+
+  &__content-left-social-media {
+    width: 14.4rem;
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  &__content-left-link-icon {
+    display: block;
+    font-size: 0;
+
+    svg {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+
+  &__content-right {
+    display: flex;
+    gap: 3.2rem;
+  }
+}

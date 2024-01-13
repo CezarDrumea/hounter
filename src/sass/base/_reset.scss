@@ -15,9 +15,6 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-
   &::-webkit-scrollbar {
     display: none;
   }

@@ -88,4 +88,15 @@
     @extend .join-now__form-card-input;
     height: 14.4rem;
   }
+
+  &__form-card-consent {
+    width: 49.6rem;
+    display: flex;
+    gap: 0.8rem;
+    margin-left: auto;
+  }
+
+  &__form-card-consent-text {
+    color: $color-grey-3;
+  }
 }

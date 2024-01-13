@@ -2,12 +2,13 @@
 @import 'abstracts/colors';
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
-@import 'abstracts/vectors';
+@import 'abstracts/svgs';
 
 @import 'base/reset';
 @import 'base/typography';
 
 @import 'components/buttons';
+@import 'components/checkbox';
 @import 'components/huge-card';
 @import 'components/inputs';
 @import 'components/labels';
@@ -16,6 +17,7 @@
 @import 'components/medium-card';
 @import 'components/small-card';
 
+@import 'layout/footer';
 @import 'layout/header';
 
 @import 'page/featured-house';
