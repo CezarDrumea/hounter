@@ -1,0 +1,91 @@
+%bg-reset {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.join-now {
+  padding: 12rem 12.4rem 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__text-card,
+  &__form-card {
+    box-shadow: 0 0.8rem 3.2rem 0 rgba($color-black, 0.09);
+    padding: 4rem;
+    height: 59.2rem;
+    border-radius: 0.8rem;
+  }
+
+  &__text-card {
+    position: relative;
+    width: 47.8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__text-card-title {
+    color: $color-text-dark;
+  }
+
+  &__text-card-paragraph {
+    color: $color-grey-3;
+  }
+
+  &__text-card-line {
+    margin: 0 auto;
+    width: 4rem;
+    height: 0.2rem;
+    border-radius: 0.4rem;
+    background-color: $color-primary;
+  }
+
+  &__text-card-bg-img {
+    width: 45rem;
+    height: 32rem;
+    position: absolute;
+    background-image: url(../img/blur-bg-join-now-text-card.svg);
+    background-size: cover;
+    bottom: 3%;
+    left: 5%;
+  }
+
+  &__text-card-icon {
+    height: 20.6rem;
+    background-repeat: no-repeat;
+    background-image: url(../img/tab-icon.svg);
+    background-size: 55%;
+    background-position: 60% bottom;
+  }
+
+  &__form-card {
+    width: 68.2rem;
+  }
+
+  &__form-card-field {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form-card-field-name {
+    height: 5.6rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+  }
+
+  &__form-card-input,
+  &__form-card-select {
+    width: 49.6rem;
+    margin-bottom: 2.8rem;
+  }
+
+  &__form-card-textarea {
+    @extend .join-now__form-card-input;
+    height: 14.4rem;
+  }
+}

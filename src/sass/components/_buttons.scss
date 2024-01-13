@@ -75,6 +75,7 @@
     align-items: center;
 
     ul {
+      mix-blend-mode: multiply;
       display: none;
       flex-direction: column;
       position: absolute;
@@ -87,6 +88,10 @@
         border-radius: 100rem;
         width: 100%;
       }
+    }
+
+    svg {
+      transition: 0.2s;
     }
   }
 
@@ -161,20 +166,6 @@
     &:hover {
       box-shadow: none;
       color: $color-primary;
-    }
-  }
-
-  // ACTIVE MODIFIER
-
-  &--select-active {
-    @extend .button;
-
-    ul {
-      display: flex;
-    }
-
-    svg {
-      rotate: 180deg;
     }
   }
 
