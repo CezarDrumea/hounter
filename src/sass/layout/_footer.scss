@@ -5,6 +5,7 @@
   padding: 12rem 12.4rem 10.5rem;
 
   &__blur-bg {
+    z-index: -1;
     position: absolute;
     bottom: 0;
     right: 0;

@@ -10,6 +10,7 @@
   }
 
   &__blur-bg {
+    z-index: -1;
     position: absolute;
     top: -19.8rem;
     right: 0;

@@ -1,5 +1,6 @@
 .large-card {
   cursor: pointer;
+  transition: 0.5s;
 
   &__img {
     @extend .large-card;
